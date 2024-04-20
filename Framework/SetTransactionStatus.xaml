@@ -150,9 +150,9 @@
                 <ui:AddLogFields.Fields>
                   <InArgument x:TypeArguments="x:String" x:Key="logF_TransactionStatus">Success</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="logF_TransactionNumber">[io_TransactionNumber.ToString]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="logF_TransactionID">[in_TransactionGender]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="logF_TransactionField1">[in_TransactionCountry]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="logF_TransactionField2">[in_TransactionNameSet]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="logF_TransactionGender">[in_TransactionGender]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="logF_TransactionCountry">[in_TransactionCountry]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="logF_TransactionNameSet">[in_TransactionNameSet]</InArgument>
                 </ui:AddLogFields.Fields>
               </ui:AddLogFields>
               <ui:LogMessage DisplayName="Log Message (Success)" sap:VirtualizedContainerService.HintSize="387.2,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[in_Config(&quot;LogMessage_Success&quot;).ToString]" />

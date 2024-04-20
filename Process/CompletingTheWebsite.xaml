@@ -11,7 +11,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>824,4365.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>743.2,4636</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ExtractDataFromWebsite_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -127,49 +127,49 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="CompletingTheWebsite" sap:VirtualizedContainerService.HintSize="754.4,4300.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CompletingTheWebsite" sap:VirtualizedContainerService.HintSize="753.6,4571.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message - Start CompletingTheWebsite" sap:VirtualizedContainerService.HintSize="692,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Start completing data on the Website&quot;]">
+    <ui:LogMessage DisplayName="Log Message - Start CompletingTheWebsite" sap:VirtualizedContainerService.HintSize="691.2,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Start completing data on the Website&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: Generate a Random Name - Fake Name Generator" sap:VirtualizedContainerService.HintSize="692,3888.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="26c2ab5b-5f36-4238-bcbe-f43f16330586" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser Chrome: Generate a Random Name - Fake Name Generator" sap:VirtualizedContainerService.HintSize="691.2,4134.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="26c2ab5b-5f36-4238-bcbe-f43f16330586" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="658.4,3632" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="657.6,3877.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Switch x:TypeArguments="x:String" DisplayName="Switch - Gender choose" Expression="[in_TransactionGender.Trim.ToLower]" sap:VirtualizedContainerService.HintSize="596,2596.8" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+            <Switch x:TypeArguments="x:String" DisplayName="Switch - Gender choose" Expression="[in_TransactionGender.Trim.ToLower]" sap:VirtualizedContainerService.HintSize="595.2,2653.6" sap2010:WorkflowViewState.IdRef="Switch`1_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence x:Key="m" sap:VirtualizedContainerService.HintSize="555.2,1133.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence x:Key="m" sap:VirtualizedContainerService.HintSize="555.2,1117.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NCheckState DisplayName="Check App State 'SPAN' - Male" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="492.8,1045.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="2" Version="V3">
+                <uix:NCheckState DisplayName="Check App State 'SPAN' - Male" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="492.8,1029.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="2" Version="V3">
                   <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,802.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,786.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -192,16 +192,16 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:SetWebAttribute>
-                      <ui:CommentOut sap2010:Annotation.AnnotationText="Visual addition. It is not necessary for proper operation." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,152.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut sap2010:Annotation.AnnotationText="Visual addition. It is not necessary for proper operation." DisplayName="Comment Out - 0-100% (M)" sap:VirtualizedContainerService.HintSize="387.2,136.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                         <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,567" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,568.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:SetWebAttribute ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Attribute="innerhtml" DisplayName="Set Web Attribute 'innerhtml' - (M)Male" sap:VirtualizedContainerService.HintSize="388,208" sap2010:WorkflowViewState.IdRef="SetWebAttribute_2" Value="100%">
+                            <ui:SetWebAttribute ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Attribute="innerhtml" DisplayName="Set Web Attribute 'innerhtml' - (M)Male" sap:VirtualizedContainerService.HintSize="353.6,249.6" sap2010:WorkflowViewState.IdRef="SetWebAttribute_2" Value="100%">
                               <ui:SetWebAttribute.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d27301e1-3442-4400-a52d-996fd20f8d5a" InformativeScreenshot="478ed1295109ccffdebd74fb0875ebd2" Selector="&lt;webctrl id='gender-male' tag='SPAN' /&gt;">
                                   <ui:Target.TimeoutMS>
@@ -213,7 +213,7 @@
                                 </ui:Target>
                               </ui:SetWebAttribute.Target>
                             </ui:SetWebAttribute>
-                            <ui:SetWebAttribute ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Attribute="innerhtml" DisplayName="Set Web Attribute 'innerhtml' - (M)Female" sap:VirtualizedContainerService.HintSize="388,208" sap2010:WorkflowViewState.IdRef="SetWebAttribute_3" Value="0%">
+                            <ui:SetWebAttribute ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Attribute="innerhtml" DisplayName="Set Web Attribute 'innerhtml' - (M)Female" sap:VirtualizedContainerService.HintSize="353.6,232.8" sap2010:WorkflowViewState.IdRef="SetWebAttribute_3" Value="0%">
                               <ui:SetWebAttribute.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d27301e1-3442-4400-a52d-996fd20f8d5a" InformativeScreenshot="5c053f2c2f0862c5323b2854c3b8647b" Selector="&lt;webctrl id='gender-female' tag='SPAN' /&gt;">
                                   <ui:Target.TimeoutMS>
@@ -264,23 +264,23 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
               </Sequence>
-              <Sequence x:Key="f" sap:VirtualizedContainerService.HintSize="556,1060.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <Sequence x:Key="f" sap:VirtualizedContainerService.HintSize="555.2,1133.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NCheckState DisplayName="Check App State 'SPAN' - Female" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="493.6,972.8" sap2010:WorkflowViewState.IdRef="NCheckState_3" Timeout="2" Version="V3">
+                <uix:NCheckState DisplayName="Check App State 'SPAN' - Female" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="492.8,1045.6" sap2010:WorkflowViewState.IdRef="NCheckState_3" Timeout="2" Version="V3">
                   <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450.4,729.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,802.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:SetWebAttribute ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" sap2010:Annotation.AnnotationText="left: 100% = Female" Attribute="style" DisplayName="Set Web Attribute 'SPAN' (K)" sap:VirtualizedContainerService.HintSize="388,280.8" sap2010:WorkflowViewState.IdRef="SetWebAttribute_9" Value="left: 100%;">
+                      <ui:SetWebAttribute ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" sap2010:Annotation.AnnotationText="left: 100% = Female" Attribute="style" DisplayName="Set Web Attribute 'SPAN' (K)" sap:VirtualizedContainerService.HintSize="387.2,280.8" sap2010:WorkflowViewState.IdRef="SetWebAttribute_9" Value="left: 100%;">
                         <ui:SetWebAttribute.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d27301e1-3442-4400-a52d-996fd20f8d5a" InformativeScreenshot="1436855d58af6d2e43e7b0fe302880c0" Selector="&lt;webctrl parentid='slider' tag='SPAN' class='ui-slider-handle ui-state-default ui-corner-all' tabindex='0' /&gt;">
                             <ui:Target.TimeoutMS>
@@ -297,7 +297,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:SetWebAttribute>
-                      <ui:CommentOut sap2010:Annotation.AnnotationText="Visual addition. It is not necessary for proper operation." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,109" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                      <ui:CommentOut sap2010:Annotation.AnnotationText="Visual addition. It is not necessary for proper operation." DisplayName="Comment Out - 0-100% (K)" sap:VirtualizedContainerService.HintSize="387.2,152.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                         <ui:CommentOut.Body>
                           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,567" sap2010:WorkflowViewState.IdRef="Sequence_16">
                             <sap:WorkflowViewStateService.ViewState>
@@ -340,7 +340,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <ui:SetWebAttribute ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" sap2010:Annotation.AnnotationText="0 = Female&#xA;" Attribute="value" DisplayName="Set Web Attribute 'INPUT' (K)" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="SetWebAttribute_12" Value="0">
+                      <ui:SetWebAttribute ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" sap2010:Annotation.AnnotationText="0 = Female&#xA;" Attribute="value" DisplayName="Set Web Attribute 'INPUT' (K)" sap:VirtualizedContainerService.HintSize="387.2,278.4" sap2010:WorkflowViewState.IdRef="SetWebAttribute_12" Value="0">
                         <ui:SetWebAttribute.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d27301e1-3442-4400-a52d-996fd20f8d5a" InformativeScreenshot="33812c37900f8a81bf8f559d94de2b5a" Selector="&lt;webctrl id='gen' type='hidden' /&gt;">
                             <ui:Target.TimeoutMS>
@@ -370,8 +370,8 @@
                 </uix:NCheckState>
               </Sequence>
             </Switch>
-            <ui:LogMessage DisplayName="Log Message - Select Gender" sap:VirtualizedContainerService.HintSize="596,184" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Selecting Gender &quot;+in_TransactionGender+&quot; is ready&quot;]" />
-            <ucas:SelectMenuItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Select Menu Item 'SELECT  name set'" sap:VirtualizedContainerService.HintSize="596,160" sap2010:WorkflowViewState.IdRef="SelectMenuItem_1" Item="[in_TransactionNameSet]">
+            <ui:LogMessage DisplayName="Log Message - Select Gender" sap:VirtualizedContainerService.HintSize="595.2,184" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Selecting Gender &quot;+in_TransactionGender+&quot; is ready&quot;]" />
+            <ucas:SelectMenuItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Select Menu Item 'SELECT  name set'" sap:VirtualizedContainerService.HintSize="595.2,200.8" sap2010:WorkflowViewState.IdRef="SelectMenuItem_1" Item="[in_TransactionNameSet]">
               <ucas:SelectMenuItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="64">
                   <x:String>American</x:String>
@@ -424,8 +424,8 @@
                 </ui:Target>
               </ucas:SelectMenuItem.Target>
             </ucas:SelectMenuItem>
-            <ui:LogMessage DisplayName="Log Message - Select Gender" sap:VirtualizedContainerService.HintSize="596,143" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Selecting Name Set &quot;+in_TransactionNameSet+&quot; is ready&quot;]" />
-            <ucas:SelectMenuItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Select Menu Item 'SELECT  country'" sap:VirtualizedContainerService.HintSize="596,160" sap2010:WorkflowViewState.IdRef="SelectMenuItem_2" Item="[in_TransactionCountry]">
+            <ui:LogMessage DisplayName="Log Message - Name Set" sap:VirtualizedContainerService.HintSize="595.2,184" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Selecting Name Set &quot;+in_TransactionNameSet+&quot; is ready&quot;]" />
+            <ucas:SelectMenuItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Select Menu Item 'SELECT  country'" sap:VirtualizedContainerService.HintSize="595.2,200.8" sap2010:WorkflowViewState.IdRef="SelectMenuItem_2" Item="[in_TransactionCountry]">
               <ucas:SelectMenuItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="32">
                   <x:String>Australia</x:String>
@@ -472,8 +472,8 @@
                 </ui:Target>
               </ucas:SelectMenuItem.Target>
             </ucas:SelectMenuItem>
-            <ui:LogMessage DisplayName="Log Message - Select Gender" sap:VirtualizedContainerService.HintSize="596,143" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Selecting Country &quot;+in_TransactionCountry+&quot; is ready. Go to Generate&quot;]" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="596,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="26c2ab5b-5f36-4238-bcbe-f43f16330586" Version="V3">
+            <ui:LogMessage DisplayName="Log Message - Select Country" sap:VirtualizedContainerService.HintSize="595.2,184" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Selecting Country &quot;+in_TransactionCountry+&quot; is ready. Go to Generate&quot;]" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="595.2,182.4" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="26c2ab5b-5f36-4238-bcbe-f43f16330586" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/advanced.php?t=country&amp;n%5B%5D=us&amp;c%5B%5D=us&amp;gen=100&amp;age-min=19&amp;age-max=85" CvElementArea="540, 686, 93, 32" CvTextArea="548, 693, 77, 16" CvTextArgument="Generate" CvType="Button" DesignTimeRectangle="628, 548, 71, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='genbtn' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='genbtn' tag='INPUT' type='submit' class='button red' aaname='Generate' check:text='Generate' /&gt;" Guid="33427647-0e75-49cf-bda5-7aec5cfc4eae" InformativeScreenshot="cf938c16b012e2c566ad872a2e9cfcf0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -495,6 +495,6 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Message - End CompletingTheWebsite" sap:VirtualizedContainerService.HintSize="692,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Completing the Website done&quot;]" />
+    <ui:LogMessage DisplayName="Log Message - End CompletingTheWebsite" sap:VirtualizedContainerService.HintSize="691.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Completing the Website done&quot;]" />
   </Sequence>
 </Activity>
