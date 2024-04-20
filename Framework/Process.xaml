@@ -117,7 +117,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\ExtractDataFromWebsite.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process\CompletingTheWebsite.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\CompletingTheWebsite.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process\CompletingTheWebsite.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_GeneratorWebsite">
           <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;GeneratorWebsite&quot;).ToString" />
@@ -135,7 +135,9 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\ExtractDataFormWebsite.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Process\ExtractDataFormWebsite.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        <InArgument x:TypeArguments="x:String" x:Key="in_GeneratorWebsite">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;GeneratorWebsite&quot;).ToString" />
+        </InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
