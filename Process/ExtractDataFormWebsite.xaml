@@ -2,6 +2,8 @@
   <x:Members>
     <x:Property Name="in_GeneratorWebsite" Type="InArgument(x:String)" />
     <x:Property Name="io_dt_OutputTable" Type="InOutArgument(sd:DataTable)" />
+    <x:Property Name="io_dict_Report" Type="InOutArgument(scg:Dictionary(x:String, x:String))" />
+    <x:Property Name="in_TransactionID" Type="InArgument(x:String)" />
   </x:Members>
   <this:ExtractDataFormWebsite.in_GeneratorWebsite>
     <InArgument x:TypeArguments="x:String" />
@@ -9,7 +11,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>824,2172.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>824,2811.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ExtractDataFormWebsite_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -122,9 +124,10 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExtractDataFormWebsite" sap:VirtualizedContainerService.HintSize="592,2450.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ExtractDataFormWebsite" sap:VirtualizedContainerService.HintSize="592,2746.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="FullDataText" />
       <Variable x:TypeArguments="x:String" Name="BirthdayMatch" />
@@ -132,6 +135,7 @@
       <Variable x:TypeArguments="x:String" Name="AgeMatch" />
       <Variable x:TypeArguments="x:String" Name="EmailMatch" />
       <Variable x:TypeArguments="x:String" Name="CompanySplit" />
+      <Variable x:TypeArguments="x:String" Name="BusinessExceptionMess" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -185,6 +189,21 @@
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
     <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NameMatch.Trim.Split(&quot; &quot;)(0), NameMatch.Trim.Split(&quot; &quot;).Last, EmailMatch.Trim, AgeMatch.Trim, Convert.ToDateTime(BirthdayMatch).ToString(&quot;yyyy-MM-dd&quot;), CompanySplit.Substring(0,1).ToUpper+CompanySplit.Substring(1).ToLower}]" DataTable="[io_dt_OutputTable]" DisplayName="Add Data Row - to io_dt_OutputTable" sap:VirtualizedContainerService.HintSize="529.6,228" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+    <Assign DisplayName="Assign - Correct" sap:VirtualizedContainerService.HintSize="529.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[BusinessExceptionMess]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">["Correct"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <InvokeMethod DisplayName="Invoke Method - Correct" sap:VirtualizedContainerService.HintSize="529.6,174.4" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Add">
+      <InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[io_dict_Report]</InArgument>
+      </InvokeMethod.TargetObject>
+      <InArgument x:TypeArguments="x:String">[in_TransactionID]</InArgument>
+      <InArgument x:TypeArguments="x:String">[BusinessExceptionMess]</InArgument>
+    </InvokeMethod>
     <ui:LogMessage DisplayName="Log Message - End ExtractDataFormWebsite" sap:VirtualizedContainerService.HintSize="529.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Downloading data done&quot;]" />
   </Sequence>
 </Activity>
